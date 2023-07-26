@@ -1,0 +1,79 @@
+.App {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  width: 90vw;
+}
+.cardInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 60vw;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 100;
+  line-height: 1.1;
+  background: #000;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  .flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .flag img {
+    width: 75%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .textInfo {
+    width: 50%;
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .cardInfo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      height: 300px;
+    }
+    .flag {
+      width: 100%;
+    }
+    .flag img {
+        width: 100%;
+        height: auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    .textInfo {
+      font-size: 1rem;
+      font-weight: 50;
+      line-height: 1.2;
+
+      width: 100%;
+      padding: 0;
+      margin: 0;
+
+    }
+  }
+}
